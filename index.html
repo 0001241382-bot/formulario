@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Web Design</title>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Quiz de Web Design</h1>
+        <form id="quizForm">
+
+            <!-- PERGUNTA 1 -->
+            <div class="pergunta-bloco">
+                <p class="pergunta-titulo">1. Para que serve a tag &lt;th&gt; no HTML?</p>
+                <label class="opcao"><input type="radio" name="p1" value="errado"> <strong>A)</strong> Para criar uma quebra de linha na tabela.</label>
+                <label class="opcao"><input type="radio" name="p1" value="correto"> <strong>B)</strong> Para definir uma célula de cabeçalho em uma tabela.</label>
+                <label class="opcao"><input type="radio" name="p1" value="errado"> <strong>C)</strong> Para aplicar um estilo em negrito em qualquer texto.</label>
+                <label class="opcao"><input type="radio" name="p1" value="errado"> <strong>D)</strong> Para criar um link de navegação interno.</label>
+            </div>
+
+            <!-- PERGUNTA 2 -->
+            <div class="pergunta-bloco">
+                <p class="pergunta-titulo">2. Qual propriedade CSS é usada para mudar a cor do texto?</p>
+                <label class="opcao"><input type="radio" name="p2" value="errado"> <strong>A)</strong> font-style</label>
+                <label class="opcao"><input type="radio" name="p2" value="errado"> <strong>B)</strong> background-color</label>
+                <label class="opcao"><input type="radio" name="p2" value="correto"> <strong>C)</strong> color</label>
+                <label class="opcao"><input type="radio" name="p2" value="errado"> <strong>D)</strong> text-color</label>
+            </div>
+
+            <!-- PERGUNTA 3 -->
+            <div class="pergunta-bloco">
+                <p class="pergunta-titulo">3. Como exibimos uma mensagem de alerta na tela usando JavaScript?</p>
+                <label class="opcao"><input type="radio" name="p3" value="errado"> <strong>A)</strong> console.log("Olá");</label>
+                <label class="opcao"><input type="radio" name="p3" value="errado"> <strong>B)</strong> prompt("Olá");</label>
+                <label class="opcao"><input type="radio" name="p3" value="errado"> <strong>C)</strong> popUp("Olá");</label>
+                <label class="opcao"><input type="radio" name="p3" value="correto"> <strong>D)</strong> alert("Olá");</label>
+            </div>
+
+            <!-- PERGUNTA 4 -->
+            <div class="pergunta-bloco">
+                <p class="pergunta-titulo">4. Qual tag HTML é usada para criar uma lista com marcadores (não numerada)?</p>
+                <label class="opcao"><input type="radio" name="p4" value="correto"> <strong>A)</strong> &lt;ul&gt;</label>
+                <label class="opcao"><input type="radio" name="p4" value="errado"> <strong>B)</strong> &lt;ol&gt;</label>
+                <label class="opcao"><input type="radio" name="p4" value="errado"> <strong>C)</strong> &lt;li&gt;</label>
+                <label class="opcao"><input type="radio" name="p4" value="errado"> <strong>D)</strong> &lt;list&gt;</label>
+            </div>
+
+            <!-- PERGUNTA 5 -->
+            <div class="pergunta-bloco">
+                <p class="pergunta-titulo">5. No CSS, qual símbolo é usado para selecionar um elemento pela sua classe (class)?</p>
+                <label class="opcao"><input type="radio" name="p5" value="correto"> <strong>A)</strong> . (ponto)</label>
+                <label class="opcao"><input type="radio" name="p5" value="errado"> <strong>B)</strong> # (hashtag)</label>
+                <label class="opcao"><input type="radio" name="p5" value="errado"> <strong>C)</strong> * (asterisco)</label>
+                <label class="opcao"><input type="radio" name="p5" value="errado"> <strong>D)</strong> @ (arroba)</label>
+            </div>
+
+            <button type="button" onclick="calcularResultado()">Finalizar Quiz</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <!-- Vincula o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
